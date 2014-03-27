@@ -1,0 +1,29 @@
+{
+  "name": "auth0mosca",
+  "version": "0.1.0",
+  "description": "An authentication/authorization module for mosca servers, using Auth0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugeniop/auth0mosca"
+  },
+  "keywords": [
+    "mosca", "authentication", "authorization"
+  ],
+  "author": "Eugenio Pace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eugeniop/auth0mosca/issues"
+  },
+  "dependencies": {
+    "jasonwebtoken": "0.2.0",
+    "request": "2.34.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}
