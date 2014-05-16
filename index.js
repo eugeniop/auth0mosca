@@ -9,7 +9,27 @@ function Auth0Mosca(auth0Namespace, clientId, clientSecret, connection)
   this.clientSecret = clientSecret;
 }
 
-Auth0Mosca.prototype.authenticate = function(){
+Auth0Mosca.prototype.authenticateWithJWT = function(){
+
+  var self = this;
+
+  return function(client, username, password, callback) {
+
+    if( username !== 'JWT' ) { return callback("Invalid Credentials", false); }
+
+    // console.log('Passsord:'+password);
+
+    jwt.verify(password, new Buffer(self.clientSecret, 'base64'), function(err,profile){
+          if( err ) { return callback("Error getting UserInfo", false); }
+          console.log("Authenticated client " + profile.user_id);
+          console.log(profile.topics);
+          client.deviceProfile = profile;
+          return callback(null, true);
+        });
+  }
+}
+
+Auth0Mosca.prototype.authenticateWithCredentials = function(){
 
   var self = this;
 
