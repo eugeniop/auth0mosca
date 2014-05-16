@@ -19,7 +19,7 @@
     "url": "https://github.com/eugeniop/auth0mosca/issues"
   },
   "dependencies": {
-    "jasonwebtoken": "0.2.0",
+    "jsonwebtoken": "0.2.0",
     "request": "2.34.0"
   },
   "devDependencies": {
