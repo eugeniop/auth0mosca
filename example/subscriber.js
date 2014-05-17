@@ -7,8 +7,8 @@ var settings = {
   protocolId: 'MQIsdp',
   protocolVersion: 3,
   clientId: 'Reader-1',
-  username:'readerUsername',
-  password:'readerPassword'
+  username:'subscriber username',
+  password:'subscriber password'
 }
 
 // client connection

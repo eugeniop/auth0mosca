@@ -1,5 +1,3 @@
-var Auth0Mosca = require('auth0mosca');
-
 var mqtt = require('mqtt')
   , host = 'localhost'
   , port = '9999';
@@ -9,8 +7,8 @@ var settings = {
   protocolId: 'MQIsdp',
   protocolVersion: 3,
   clientId: 'Thermostat 1a', //This is not the Auth0 ClientID (it is the MQTT clientID)
-  username:'deviceUsername',
-  password: 'devicePassword'
+  username:'the device username',
+  password: 'the password'
 };
 
 // client connection

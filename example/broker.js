@@ -1,11 +1,11 @@
 var mosca = require('mosca')
-var Auth0Mosca = require('auth0mosca');
+var Auth0Mosca = require('../../auth0mosca');
 
 var settings = {
   port: 9999,
 };
 
-var auth0 = new Auth0Mosca('https://yourcompany.auth0.com', 'YOUR CLIENT ID', 'YOUR CLIENT SECRET','A CONNECTION');
+var auth0 = new Auth0Mosca('https://yourcompany.auth0.com', 'q1OsLQy...cBOTJzwZdQniR', 'IOG1LGRRO8c....SfTF8j1le','Thermostats');
 
 //Setup the Mosca server
 var server = new mosca.Server(settings);
