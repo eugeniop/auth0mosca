@@ -1,27 +1,31 @@
 {
-  "name": "auth0mosca",
-  "version": "0.1.0",
-  "description": "An authentication/authorization module for mosca servers, using Auth0",
-  "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/eugeniop/auth0mosca"
-  },
-  "keywords": [
-    "mosca", "authentication", "authorization", "mqtt", "jwt"
-  ],
-  "author": "Eugenio Pace",
-  "email": "eugeniop@auth0.com",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/eugeniop/auth0mosca/issues"
-  },
-  "dependencies": {
-    "jsonwebtoken": "0.2.0",
-    "request": "2.34.0"
-  },
-  "devDependencies": {
-    "chai": "*",
-    "mocha": "*"
-  }
+    "name": "auth0mosca",
+    "version": "0.1.0",
+    "description": "An authentication/authorization module for mosca servers, using Auth0",
+    "main": "lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/eugeniop/auth0mosca"
+    },
+    "keywords": [
+        "mosca", "authentication", "authorization", "mqtt", "jwt"
+    ],
+    "author": "Eugenio Pace",
+    "email": "eugeniop@auth0.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/eugeniop/auth0mosca/issues"
+    },
+    "dependencies": {
+        "dotenv": "^4.0.0",
+        "jsonwebtoken": "^7.3.0",
+        "jwks-rsa": "^1.1.1",
+        "mosca": "^2.3.0",
+        "mqtt": "^2.5.0",
+        "request": "^2.81.0"
+    },
+    "devDependencies": {
+        "chai": "*",
+        "mocha": "*"
+    }
 }
